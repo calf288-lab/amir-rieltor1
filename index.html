@@ -161,6 +161,8 @@ input::placeholder,textarea::placeholder{color:var(--muted)}
 .mess .btn{flex:1;min-width:170px}
 footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.82rem;text-align:center}
 footer b{color:var(--txt)}
+footer a{color:inherit;text-decoration:underline;cursor:pointer}
+footer a:hover{color:var(--gold)}
 .mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:250;background:rgba(15,22,22,.96);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:10px 12px;gap:8px}
 .mobile-bar a{flex:1;padding:13px 6px;text-align:center;border-radius:10px;text-decoration:none;font-weight:600;font-size:.8rem;color:#fff}
 .mobile-bar .m-call{background:var(--gold);color:#0f1616}
@@ -434,7 +436,8 @@ footer b{color:var(--txt)}
 <footer>
   <div class="container">
     <b>ИП Шигапов Амир Фоатович</b> · ОГРНИП 322169000048740 · ИНН 165909137450<br>
-    г. Казань, ул. Мавлютова, д. 31а, оф. 2-7 · © 2008–2026 · Информация не является публичной офертой
+    г. Казань, ул. Мавлютова, д. 31а, оф. 2-7 · © 2008–2026 · Информация не является публичной офертой<br>
+    <a onclick="document.getElementById('pol').style.display='block';return false" href="#">Политика обработки персональных данных (152-ФЗ)</a>
   </div>
 </footer>
 
@@ -442,6 +445,18 @@ footer b{color:var(--txt)}
   <a href="tel:+79274099179" class="m-call">📞 Звонок</a>
   <a href="https://wa.me/79274099179" class="m-wa" target="_blank">WhatsApp</a>
   <a href="https://max.ru/u/f9LHodD0cOIWNAZrhgchmkKtJd000wtnZToc7GtkZQrn906DMKD6yePMCQ8" target="_blank" class="m-max">MAX</a>
+</div>
+
+<!-- Политика 152-ФЗ -->
+<div id="pol" style="display:none;position:fixed;inset:0;z-index:9998;background:rgba(0,0,0,.75);padding:20px;overflow:auto" onclick="if(event.target===this)this.style.display='none'">
+  <div style="max-width:720px;margin:40px auto;background:#1e2d2d;border:1px solid #2F4F4F;border-radius:16px;padding:36px;color:#e8e5dd;font-size:14px;line-height:1.7">
+    <h3 style="font-size:20px;margin-bottom:16px">Политика обработки персональных данных</h3>
+    <p>Настоящая политика действует в отношении всех персональных данных, которые сайт получает через формы обратной связи (имя, номер телефона, содержание сообщения).</p>
+    <p style="margin-top:12px">Данные обрабатываются в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» исключительно для связи с заявителем, консультации и расчёта стоимости услуг.</p>
+    <p style="margin-top:12px">Отправляя форму, вы даёте согласие на обработку своих персональных данных. Данные не передаются третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
+    <p style="margin-top:12px">Согласие может быть отозвано в любой момент по телефону +7 927 409-91-79 или в мессенджерах.</p>
+    <button onclick="document.getElementById('pol').style.display='none'" style="margin-top:24px;padding:12px 26px;background:#c9a24b;border:0;border-radius:10px;font-weight:600;cursor:pointer;color:#0f1616">Понятно, закрыть</button>
+  </div>
 </div>
 
 <script>
