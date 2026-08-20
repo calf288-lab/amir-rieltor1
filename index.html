@@ -116,7 +116,7 @@ header.scrolled{padding:12px 0;background:rgba(15,22,22,.88);backdrop-filter:blu
 .req-row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.88rem}
 .req-row:last-child{border:0}
 .req-row span{color:var(--muted)}
-.req-row b{font-weight:500;color:var(--txt);font-family:'Fraunces',serif;letter-spacing:.03em}
+.req-row b{font-weight:500;color:var(--txt);font-family:'Fraunces',serif;letter-spacing:.03em;text-align:right}
 .partners{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
 .partner{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px;font-size:.85rem;transition:all .4s}
 .partner:hover{border-color:var(--gold);transform:translateY(-2px)}
@@ -147,6 +147,7 @@ header.scrolled{padding:12px 0;background:rgba(15,22,22,.88);backdrop-filter:blu
 .lead-magnet>*{position:relative}
 .lead-magnet h3{font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:14px}
 .lead-magnet p{color:var(--muted)}
+.office-line{margin-top:20px;color:var(--muted);font-size:.9rem;display:flex;align-items:center;gap:8px}
 form{display:grid;gap:14px}
 input,textarea{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:16px;color:var(--txt);font-family:inherit;font-size:.98rem;cursor:none;transition:all .3s}
 input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,75,.12)}
@@ -238,7 +239,7 @@ footer b{color:var(--txt)}
         </div>
       </div>
       <div class="hero-photo">
-        <img src="amir.jpg.png" alt="Амир Шигапов — риелтор в Казани" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 500%22%3E%3Crect width=%22400%22 height=%22500%22 fill=%22%231e2d2d%22/%3E%3Ccircle cx=%22200%22 cy=%22180%22 r=%2270%22 fill=%22%232F4F4F%22/%3E%3Cpath d=%22M80 500c0-80 55-130 120-130s120 50 120 130%22 fill=%22%232F4F4F%22/%3E%3Ctext x=%22200%22 y=%22470%22 fill=%22%23c9a24b%22 font-size=%2220%22 text-anchor=%22middle%22 font-family=%22serif%22%3EАмир Шигапов%3C/text%3E%3C/svg%3E'">
+        <img src="amir.jpg" alt="Амир Шигапов — риелтор в Казани" onerror="this.onerror=null;this.src='amir.jpg.png'">
         <div class="hero-badges">
           <span class="hbadge">ИП · официально</span>
           <span class="hbadge">Паспорт проверен</span>
@@ -308,12 +309,12 @@ footer b{color:var(--txt)}
     <p class="sub reveal d2">Каждая сделка — по договору. Мои реквизиты открыты — проверяйте где угодно.</p>
     <div class="trust-grid">
       <div class="trust-photo reveal d1">
-        <img src="amir.jpg.png" alt="Амир Шигапов, риелтор, Казань" loading="lazy" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231e2d2d%22/%3E%3Ctext x=%22200%22 y=%22155%22 fill=%22%23c9a24b%22 font-size=%2222%22 text-anchor=%22middle%22 font-family=%22serif%22%3EАмир Шигапов%3C/text%3E%3C/svg%3E'">
+        <img src="amir.jpg" alt="Амир Шигапов, риелтор, Казань" loading="lazy" onerror="this.onerror=null;this.src='amir.jpg.png'">
         <div class="req">
           <div class="req-row"><span>Статус</span><b>ИП Шигапов Амир Фоатович</b></div>
           <div class="req-row"><span>ОГРНИП</span><b>322169000048740</b></div>
           <div class="req-row"><span>ИНН</span><b>165909137450</b></div>
-          <div class="req-row"><span>Регистрация</span><b>01.03.2022 · Казань</b></div>
+          <div class="req-row"><span>Офис</span><b>г. Казань, ул. Мавлютова, д. 31а, оф. 2-7</b></div>
         </div>
       </div>
       <div class="reveal d2">
@@ -408,6 +409,7 @@ footer b{color:var(--txt)}
         <div class="sec-label" style="margin-bottom:14px">Бесплатно</div>
         <h3>Узнайте стоимость вашей квартиры <span class="it">за 24 часа</span></h3>
         <p>Пришлю подробный расчёт цены по рынку Казани + план продажи. Или подберу варианты под ваш бюджет — без спама и навязывания.</p>
+        <div class="office-line">📍 Офис: г. Казань, ул. Мавлютова, д. 31а, оф. 2-7</div>
         <div class="mess">
           <a class="btn" href="tel:+79274099179" data-h><span>📞 +7 927 409-91-79</span></a>
           <a class="btn wa" href="https://wa.me/79274099179" target="_blank" data-h><span>WhatsApp</span></a>
@@ -432,7 +434,7 @@ footer b{color:var(--txt)}
 <footer>
   <div class="container">
     <b>ИП Шигапов Амир Фоатович</b> · ОГРНИП 322169000048740 · ИНН 165909137450<br>
-    Казань · Республика Татарстан · © 2008–2026 · Информация не является публичной офертой
+    г. Казань, ул. Мавлютова, д. 31а, оф. 2-7 · © 2008–2026 · Информация не является публичной офертой
   </div>
 </footer>
 
